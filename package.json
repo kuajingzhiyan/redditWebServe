@@ -14,7 +14,9 @@
     "docker:up": "docker compose up -d --build",
     "docker:down": "docker compose down",
     "docker:logs": "docker compose logs -f api",
-    "google:fetch-jwks": "tsx scripts/fetch-google-jwks.ts"
+    "google:fetch-jwks": "tsx scripts/fetch-google-jwks.ts",
+    "deploy": "tsx scripts/deploy.ts",
+    "verify": "tsx scripts/verify-remote.ts"
   },
   "keywords": [],
   "author": "",
@@ -44,7 +46,9 @@
     "@types/express": "^5.0.6",
     "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^25.9.3",
+    "@types/ssh2": "^1.15.5",
     "prisma": "^6.19.0",
+    "ssh2": "^1.17.0",
     "tsx": "^4.22.4",
     "typescript": "^6.0.3"
   }
